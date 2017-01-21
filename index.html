@@ -26,9 +26,8 @@
           <li class="menu-item">
             <a href="#">Каталог</a>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#">Новинки</a></li>
-              <hr>
-              <li class="submenu-item"><a href="#">Сливочное</a></li>
+              <li class="submenu-item"><a href="catalog.html">Новинки</a></li>
+              <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
               <li class="submenu-item"><a href="#">Щербеты</a></li>
               <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
               <li class="submenu-item"><a href="#">Мелорин</a></li>
@@ -43,19 +42,41 @@
         </ul>
         
           
-        <ul class="header-buttons">
-          <li class="search-button"> 
+        <div class="header-buttons">
+          
+          <div class="search-button"> 
             <img src="img/search-pic.png"  width="20" height="20" class="button-img">
-          </li>
-          <li class="login-button">
+            <form class="search-form" name="search-form" method="post">
+              <input type="text" name="search">
+            </form>
+          </div>
+          
+          <div class="login-button">
             <img src="img/login-pic.png" width="20" height="20" class="button-img">
             <span>Вход</span>
-          </li>
-          <li class="cart-button">
+            <form class="login-form" name="login-form" method="post">
+              <input type="text" name="login">
+              <input type="password" name="pass">
+              <button type="submit" class="red-btn">Вход</button>
+              <div class="login-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>  
+            </form>
+          </div>
+          
+          <div class="cart-button">
             <img src="img/cart-pic.png" width="20" height="20" class="button-img">
             <span>Пусто</span>
-          </li>
-        </ul>
+          </div>
+          
+        </div>
+        
+        
+        <div class="telefone">
+          <p>С 10 до 20, ежедневно</p>
+          <span>8 812 450-25-25</span>
+        </div>
 
         
         
@@ -63,12 +84,6 @@
       
       
       <section class="slider">
-        
-        <div class="telefone">
-          <p>С 10 до 20, ежедневно</p>
-          <span>8 812 450-25-25</span>
-        </div>
-        
         
         <input type="radio" name="slider-selector" id="slide1" checked>
         <input type="radio" name="slider-selector" id="slide2">
@@ -110,7 +125,7 @@
       </section>
       
       
-      <section class="banner-conteiner">
+      <section class="container">
         
         <div class="banner banner-left">
           <h2>Малинка даром!</h2>
@@ -127,11 +142,21 @@
       </section> 
       
       
-      <section class="hits">
+      <section class="container">
         
         <article class="catalog-item">
           <div class="inner">
-            <div class="catalog-item-pic hit-item"></div>
+            <div class="catalog-item-pic">
+              <img src="">
+              <div class="hit-item">
+                хит
+              </div>
+              <div class="item-price">
+                300
+                <img src="ruble">
+                кг
+              </div>
+            </div>
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             <a href="#" class="catalog-item-btn red-btn">Быстрый просмотр</a>
           </div>  
@@ -139,7 +164,17 @@
         
         <article class="catalog-item">
           <div class="inner">
-            <div class="catalog-item-pic hit-item"></div>
+            <div class="catalog-item-pic">
+              <img src="">
+              <div class="hit-item">
+                хит
+              </div>
+              <div class="item-price">
+                300
+                <img src="ruble">
+                кг
+              </div>
+            </div>
             <p>Сливочно-кофейное с кусочками шоколада</p>
             <a href="#" class="hit-btn red-btn">Быстрый просмотр</a>
           </div>  
@@ -147,7 +182,17 @@
         
         <article class="catalog-item">
           <div class="inner">
-            <div class="catalog-item-pic hit-item"></div>
+            <div class="catalog-item-pic">
+              <img src="">
+              <div class="hit-item">
+                хит
+              </div>
+              <div class="item-price">
+                300
+                <img src="ruble">
+                кг
+              </div>
+            </div>
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
             <a href="#" class="hit-btn red-btn">Быстрый просмотр</a>
           </div>  
@@ -155,7 +200,17 @@
         
         <article class="catalog-item">
           <div class="inner">
-            <div class="catalog-item-pic hit-item"></div>
+            <div class="catalog-item-pic">
+              <img src="">
+              <div class="hit-item">
+                хит
+              </div>
+              <div class="item-price">
+                300
+                <img src="ruble">
+                кг
+              </div>
+            </div>
             <p>Сливочное крем-брюле с карамельной подливкой</p>
             <a href="#" class="hit-btn red-btn">Быстрый просмотр</a>
           </div>  
@@ -164,7 +219,7 @@
       </section>
       
       
-      <section class="info">
+      <section class="info container">
         
         <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
         
@@ -187,11 +242,11 @@
       </section>
       
       
-      <section class="banner-conteiner">
+      <section class="container">
         
         <div class="banner blog">
           <p>Новое в нашем блоге</p>
-          <a href=""><h2>10 способов сервировки фруктовых щербетов к столу</h2></a>
+          <h2><a href="">10 способов сервировки фруктовых щербетов к столу</a></h2>
         </div>
         
         <div class="banner subscribe">
@@ -233,16 +288,20 @@
         </div>
         
         <div class="footer-menu">
-          <table>
-            <tr>
-              <td><a href="#">Для поставщиков</a></td>
-              <td><a href="#">Наши документы</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">О производстве</a></td>
-              <td><a href="#">Экологические стандарты</a></td>
-            </tr>
-          </table>
+          <ul>
+            <li class="footer-menu-item">
+              <a href="#">Для поставщиков</a>
+            </li>  
+            <li class="footer-menu-item">
+              <a href="#">Наши документы</a>
+            </li>  
+            <li class="footer-menu-item">
+              <a href="#">О производстве</a>
+            </li>  
+            <li class="footer-menu-item">
+              <a href="#">Экологические стандарты</a>
+            </li>  
+          </ul>
         </div>
         
         <div class="copirites">

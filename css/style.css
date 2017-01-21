@@ -11,8 +11,9 @@
 }
 
 
-
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -50,6 +51,7 @@ body {
 
 
 .main-header {
+  position: relative;
   width: 100%;
   padding-top: 5px;
   min-height: 70px; 
@@ -162,11 +164,12 @@ body {
   list-style: none;
 }
 
-.header-buttons li {
+.search-button,
+.login-button,
+.cart-button {
   position: relative;
   
   display: inline-block;
-  box-sizing: border-box;
   height: 32px;
   padding: 8px 0px;
   margin-left: 5px;
@@ -180,7 +183,7 @@ body {
 }
 
 
-.header-buttons li:hover {
+.header-buttons div:hover {
   background: rgba(255,255,255, 1);
   color: #000;
 } 
@@ -222,13 +225,64 @@ body {
   margin-left: 10px;
 }
 
+.telefone {
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  line-height: 10px;
+}
+
+.telefone span {
+  font-size: 22px;
+}
+
+/* ------ формы хедера ------ */
 
 
-/* ------ тут будут формы хедера ------ */
+.search-form {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 1;
+  
+  width: 340px;
+  
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0, 0.4);
+  background: #fff;
+}
 
+.search-form input {
+  width: 310px;
+  height: 45px;
+  margin: 20px 15px;
+  border-radius: 5px;
+}
 
+.login-form {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 1;
+  
+  width: 280px;
+  
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0, 0.4);
+  background: #fff;
+}
 
-
+.login-form input {
+  width: 240px;
+  height: 45px;
+  margin: 20px 15px 0;
+  border-radius: 5px;
+}
 
 /* ------  слайдер ------ */
 
@@ -243,20 +297,6 @@ body {
 
 .slider input {
   display: none;
-}
-
-.telefone {
-  position: absolute;
-  right: 25px;
-  margin-top: -10px;
-  color: #fff;
-  font-weight: bold;
-  text-align: right;
-  line-height: 10px;
-}
-
-.telefone span {
-  font-size: 22px;
 }
 
 .slider-container {
@@ -284,7 +324,6 @@ body {
 }
 
 .slider-content a {
-  box-sizing: border-box;
   position: absolute;
   left: 210px;
   bottom: -90px;
@@ -304,7 +343,6 @@ body {
 
 .selector-btn {
   display: inline-block;
-  box-sizing: border-box;
   width: 21px;
   height: 21px;
   margin-right: 5px;
