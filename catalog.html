@@ -19,14 +19,14 @@
         
         <div class="header-logo">
           <a href="index.html">
-            <img src="img/logo.png" alt="logo" height="70" width="155">
+            <img src="img/logo.png" alt="logo" height="63" width="153">
           </a>  
         </div>
         
         
         <ul class="header-menu">
           <li class="menu-item active">
-            <a href="#">Каталог</a>
+            <a href="#"><span class="menu-link">Каталог</span></a>
             <ul class="submenu">
               <li class="submenu-item"><a href="#">Новинки</a></li>
               <li class="submenu-item"><a href="#">Сливочное</a></li>
@@ -36,10 +36,10 @@
             </ul>
           </li>
           <li class="menu-item">
-            <a href="#">Доставка и оплата</a>
+            <a href="#"><span class="menu-link">Доставка и оплата</span></a>
           </li>
           <li class="menu-item">
-            <a href="#">О Компании</a>
+            <a href="#"><span class="menu-link">О Компании</span></a>
           </li>
         </ul>
         
@@ -48,20 +48,20 @@
           
           <div class="search-button"> 
             <form class="search-form" name="search-form" method="post">
-              <input type="text" name="search">
+              <input type="text" name="search" placeholder="Что ищем?">
             </form>
           </div>
           
           <div class="login-button">
             <span>Вход</span>
             <form class="login-form" name="login-form" method="post">
-              <input type="text" name="login">
-              <input type="password" name="pass">
-              <button type="submit" class="red-btn">Вход</button>
+              <input type="text" name="login" placeholder="Электронная почта">
+              <input type="password" name="pass" placeholder="Пароль">
               <div class="login-links">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>  
+                <a href="#" class="link-decor-black"><span>Забыли пароль?</span></a>
+                <a href="#" class="link-decor-black"><span>Новая регистрация</span></a>
+              </div>
+              <button type="submit" class="login-btn red-btn">Войти</button>   
             </form>
           </div>
           
@@ -71,25 +71,25 @@
               <table>
                 <tbody>
                   <tr>
-                    <td><a href="#">x</a></td>
-                    <td><img src="" alt=""></td>
+                    <td><a href="#"><img src="img/x.png" alt="x"></a></td>
+                    <td><img src="img/1.png" alt="" width="32" height="32"></td>
                     <td>Пломбир с апельсиновым джемом</td>
-                    <td>1.5кг x <span>200 руб</span></td>
+                    <td>1.5кг x<span> 200 руб</span></td>
                     <td>300 руб</td>
                   </tr>
                   <tr>
-                    <td><a href="#">x</a></td>
-                    <td><img src="" alt=""></td>
+                    <td><a href="#"><img src="img/x.png" alt="x"></a></td>
+                    <td><img src="img/3.png" alt="" width="32" height="32"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1.5кг x <span>300 руб</span></td>
+                    <td>1.5кг x<span> 300 руб</span></td>
                     <td>450 руб</td>
                   </tr>
                   <tr>
-                    <td colspan="5">Итого: 750 руб.</td>
+                    <td colspan="5" class="cart-total-price">Итого: 750 руб.</td>
                   </tr>
                 </tbody>
                </table>
-               <a href="#">Оформить заказ</a>
+               <a href="#" class="cart-btn red-btn">Оформить заказ</a>
             </div>
           </div>
           
@@ -109,8 +109,8 @@
       <section class="main-title">
         
         <div class="breadcrumbs">
-          <a href="index.html">Главная</a>
-          <a href="#">Каталог</a>
+          <a href="index.html" class="link-decor-white"><span>Главная</span></a>
+          <a href="#" class="link-decor-white"><span>Каталог</span></a>
           <span>Сливочное</span>
         </div>
         
@@ -123,70 +123,86 @@
         
         <form>
           
-          <label class="sort-type">
-            Сортировка
+          <div class="sort-type">
+            <span>Сортировка:</span>
             <select name="sort-type">
-              <option>По популярности</option>
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
             </select>
-          </label>
+          </div>
           
-          <label class="price-range">
-            Цена: 100 руб. - 500 руб.
-            <input type="range" min="100" max="500">
-          </label>
+          <div class="price-range">
+            
+            <span>Цена: 100 руб. - 500 руб.</span>
+            
+            <input type="range" min="100" max="500" id="price-min">
+            <input type="range" min="100" max="500" id="price-max">
+            
+            <label for="price-min" class="price-min-slider"></label>
+            <label for="price-max" class="price-max-slider"></label>
+            
+          </div>
           
           <div class="fatness-select">
+            
+            <input type="radio" name="fatness" id="fatness0">
+            <input type="radio" name="fatness" id="fatness10" checked>
+            <input type="radio" name="fatness" id="fatness30">
+            <input type="radio" name="fatness" id="fatness31">
+            
             <span>Жирность:</span>
-            <label class="fatness-selector">
+            
+            <label for="fatness0" class="fatness-selector fatness-sel0">
               0%
-              <input type="radio" name="fatness">
             </label>
-            <label class="fatness-selector">
+            <label for="fatness10" class="fatness-selector fatness-sel10">
               до 10%
-              <input type="radio" name="fatness">
             </label>
-            <label class="fatness-selector">
+            <label for="fatness30" class="fatness-selector fatness-sel30">
               до 30%
-              <input type="radio" name="fatness">
             </label>
-            <label class="fatness-selector">
+            <label for="fatness31" class="fatness-selector fatness-sel31">
               выше 30%
-              <input type="radio" name="fatness">
             </label>
           </div>
           
           <div class="filler-select">
+            
+            <input type="checkbox" name="filler" id="filler-choc" checked>
+            <input type="checkbox" name="filler" id="filler-sugar" checked>
+            <input type="checkbox" name="filler" id="filler-fruit">
+            <input type="checkbox" name="filler" id="filler-syrup">
+            <input type="checkbox" name="filler" id="filler-jam">
+            
             <span>Наполнители:</span>
-            <label class="filler-selector">
+            <label for="filler-choc" class="filler-selector filler-sel-choc">
               шоколадные
-              <input type="checkbox" name="filler" checked>
             </label>
-            <label class="filler-selector">
+            <label for="filler-sugar" class="filler-selector filler-sel-sugar">
               сахарные присыпки
-              <input type="checkbox" name="filler" checked>
             </label>
-            <label class="filler-selector">
+            <label for="filler-fruit" class="filler-selector filler-sel-fruit">
               фрукты
-              <input type="checkbox" name="filler">
             </label>
-            <label class="filler-selector">
+            <label for="filler-syrup" class="filler-selector filler-sel-syrup">
               сиропы
-              <input type="checkbox" name="filler">
             </label>
-            <label class="filler-selector">
+            <label for="filler-jam" class="filler-selector filler-sel-jam">
               джемы
-              <input type="checkbox" name="filler">
             </label>
           </div>
           
-          <button type="submit">Применить</button>
+          <button type="submit" class="selection-form-button">Применить</button>
           
         </form>
         
       </section>
       
         
-      <section class="catalog-container clearfix">
+      <section class="catalog-container main-catalog">
+        
         
         <article class="catalog-item">
         
@@ -407,8 +423,8 @@
         
         <div class="catalog-nav">
           <ul>
-            <li class="nav-item">
-              <a href="#">&#60</a>
+            <li class="nav-item disabled">
+              <a>&#60</a>
             </li>
             <li class="nav-item active">
               <a href="#">1</a>
@@ -431,10 +447,10 @@
           </ul>
         </div>
         
-        <hr>
         
       </section>
   
+      <hr class="catalog-footer-line">
       
       <footer class="main-footer clearfix">
         
@@ -448,23 +464,23 @@
         <div class="footer-menu">
           <ul>
             <li class="footer-menu-item">
-              <a href="#">Для поставщиков</a>
+              <a href="#" class="link-decor-white"><span>Для поставщиков</span></a>
             </li>  
             <li class="footer-menu-item">
-              <a href="#">Наши документы</a>
+              <a href="#" class="link-decor-white"><span>Наши документы</span></a>
             </li>  
             <li class="footer-menu-item">
-              <a href="#">О производстве</a>
+              <a href="#" class="link-decor-white"><span>О производстве</span></a>
             </li>  
             <li class="footer-menu-item">
-              <a href="#">Экологические стандарты</a>
+              <a href="#" class="link-decor-white"><span>Экологические стандарты</span></a>
             </li>  
           </ul>
         </div>
         
         <div class="footer-copirites">
-          <img src="img/LogoFooter.png" alt="Html Academy Logo">
-          <p>Сделано в <a href="#">HTML Academy</a> &#169 2017</p>
+          <img src="img/logo-footer.png" alt="Html Academy Logo">
+          <p>Сделано в <a href="#" class="link-decor-white"><span>HTML Academy</span></a> &#169 2017</p>
         </div>
         
       </footer>
