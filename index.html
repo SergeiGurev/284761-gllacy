@@ -50,14 +50,14 @@
         <div class="header-buttons">
           
           <div class="search-button"> 
-            <form class="search-form" name="search-form" method="post">
+            <form class="search-form" name="search-form" method="post" action="search.php">
               <input type="text" name="search" placeholder="Что ищем?">
             </form>
           </div>
           
           <div class="login-button">
             <span>Вход</span>
-            <form class="login-form" name="login-form" method="post">
+            <form class="login-form" name="login-form" method="post" action="login.php">
               <input type="text" name="login" placeholder="Электронная почта">
               <input type="password" name="pass" placeholder="Пароль">
               <div class="login-links">
@@ -152,8 +152,8 @@
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
-              300
-              <img src="img/Rouble.svg" alt="">
+              310
+              <img src="img/rouble.svg" alt="">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -173,8 +173,8 @@
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
-              300
-              <img src="img/Rouble.svg" alt="">
+              380
+              <img src="img/rouble.svg" alt="">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -194,8 +194,8 @@
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
-              300
-              <img src="img/Rouble.svg" alt="">
+              355
+              <img src="img/rouble.svg" alt="">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -215,8 +215,8 @@
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
-              300
-              <img src="img/Rouble.svg" alt="">
+              415
+              <img src="img/rouble.svg" alt="">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -265,7 +265,7 @@
         <div class="subscribe-border">
           <div class="subscribe">
             <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </span>
-            <form style="subscribe-form" action="" method="post">
+            <form style="subscribe-form" name="subscribe-form" action="subscribe.php" method="post">
               <input type="email" name="email" placeholder="Электронная почта">
               <button type="submit" class="subscribe-form-btn red-btn">Отправить</button>
             </form>
@@ -276,6 +276,8 @@
       
       
       <section class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KkHqgDIdk1jsv71MzmTfSEqz8xtPJEwb&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+        </script>
         
         <div class="feedback">
           <p> Адрес главного офиса          <br>
@@ -321,13 +323,37 @@
         
         <div class="footer-copirites">
           <img src="img/logo-footer.png" alt="Html Academy Logo">
-          <p>Сделано в <a href="#" class="link-decor-white"><span>HTML Academy</span></a> &#169 2017</p>
+          <p>Сделано в <a href="#" class="link-decor-white"><span>HTML Academy</span></a> &#169; 2017</p>
         </div>
         
       </footer>
         
         
+      
+      <div class="modal-content">
+        
+        <button class="modal-close-btn"></button>
+        
+        <form class="modal-form" name="modal-form" action="modal.php" method="post">
+          
+          <p>Мы обязательно вам ответим!</p>
+          
+          <input type="text" placeholder="Как вас зовут?">
+          <input type="text" placeholder="Ваша почта для ответа?">
+          <textarea placeholder="Напишите что-нибудь..."></textarea>
+          
+          <button type="submit" class="red-btn">Отправить</button>
+          
+        </form>
+        
+      </div>
+      
+      <div class="modal-overlay"></div>
+      
+      
     </div>
+    
+    
     
   </body>
   
