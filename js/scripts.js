@@ -59,3 +59,27 @@ form.addEventListener("submit", function(event){
     popup.classList.add("modal-error");
   }
 });
+
+// интерактивная карта
+ymaps.ready(function () {
+//добавление карты в блок с идентификатором #map
+var myMap = new ymaps.Map("map", {
+  center: [59.939346,30.329256], //координаты центра карты
+  zoom: 16 //масштаб
+}, {
+  searchControlProvider: "yandex#search"
+});
+//запрет скроллинга при прокрутке страницы
+myMap.behaviors.disable("scrollZoom");
+//создание маркера;
+var myPlacemark = new ymaps.Placemark ([59.938631,30.323055], {
+    hintContent: "Магазин Глейси"
+}, {
+     iconLayout: "default#image",
+     iconImageHref: "img/pin.png", //иконка маркера
+     iconImageSize: [218, 142], //размер маркера
+     iconImageOffset: [-40, -142] //смещение маркера
+}); 
+  //добавление маркера на карту    
+  myMap.geoObjects.add(myPlacemark);
+});
