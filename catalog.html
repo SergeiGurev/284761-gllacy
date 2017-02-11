@@ -46,17 +46,23 @@
           
         <div class="header-buttons">
           
-          <div class="search-button"> 
+           <div class="search-button"> 
             <form class="search-form" name="search-form" method="post" action="search.php">
-              <input type="text" name="search" placeholder="Что ищем?">
+              <input class="caption-top-input" type="text" name="search" id="search" placeholder="Что ищем?">
+              <label for="search" class="caption-top">Что ищем?</label>
             </form>
           </div>
           
           <div class="login-button">
             <span>Вход</span>
             <form class="login-form" name="login-form" method="post" action="login.php">
-              <input type="text" name="login" placeholder="Электронная почта">
-              <input type="password" name="pass" placeholder="Пароль">
+              
+              <input class="caption-top-input" type="text" name="login" id="login" placeholder="Электронная почта">
+              <label for="login" class="caption-top">Электронная почта</label>
+              
+              <input class="caption-top-input" type="password" name="pass" id="password" placeholder="Пароль">
+              <label for="password" class="caption-top">Пароль</label>
+              
               <div class="login-links">
                 <a href="#" class="link-decor-black"><span>Забыли пароль?</span></a>
                 <a href="#" class="link-decor-black"><span>Новая регистрация</span></a>
@@ -71,14 +77,14 @@
               <table>
                 <tbody>
                   <tr>
-                    <td><a href="#"><img src="img/x.png" alt="x"></a></td>
+                    <td><button class="cart-del-button"></button></td>
                     <td><img src="img/1.png" alt="" width="32" height="32"></td>
                     <td>Пломбир с апельсиновым джемом</td>
                     <td>1.5кг x<span> 200 руб</span></td>
                     <td>300 руб</td>
                   </tr>
                   <tr>
-                    <td><a href="#"><img src="img/x.png" alt="x"></a></td>
+                    <td><button class="cart-del-button"></button></td>
                     <td><img src="img/3.png" alt="" width="32" height="32"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td>1.5кг x<span> 300 руб</span></td>
@@ -220,18 +226,18 @@
       </section>
       
         
-      <section class="catalog-container main-catalog">
+      <section class="main-catalog">
         
         
         <article class="catalog-item">
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/1.png" alt="" height="267" width="267">
+              <img src="img/1.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               310
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -245,11 +251,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/2.png" alt="" height="267" width="267">
+              <img src="img/2.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               380
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -263,11 +269,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/3.png" alt="" height="267" width="267">
+              <img src="img/3.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               355
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -281,11 +287,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/4.png" alt="" height="267" width="267">
+              <img src="img/4.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               415
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -299,11 +305,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/21.png" alt="" height="267" width="267">
+              <img src="img/21.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               325
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -317,11 +323,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/22.png" alt="" height="267" width="267">
+              <img src="img/22.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               410
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -335,11 +341,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/23.png" alt="" height="267" width="267">
+              <img src="img/23.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               375
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -353,11 +359,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/24.png" alt="" height="267" width="267">
+              <img src="img/24.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               320
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -371,11 +377,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/31.png" alt="" height="267" width="267">
+              <img src="img/31.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               440
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -389,11 +395,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/32.png" alt="" height="267" width="267">
+              <img src="img/32.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               435
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -407,11 +413,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/33.png" alt="" height="267" width="267">
+              <img src="img/33.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               355
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -425,11 +431,11 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/34.png" alt="" height="267" width="267">
+              <img src="img/34.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="item-price">
               420
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -498,7 +504,7 @@
         </div>
         
         <div class="footer-copirites">
-          <img src="img/logo-footer.png" alt="Html Academy Logo">
+          <img src="img/logo-footer.png" alt="Html Academy Logo" width="108" height="38">
           <p>Сделано в <a href="#" class="link-decor-white"><span>HTML Academy</span></a> &#169; 2017</p>
         </div>
         
@@ -507,6 +513,10 @@
         
     </div>
 
+    
+    <script src="js/main.js"></script>
+    
+    
   </body>
   
 </html>

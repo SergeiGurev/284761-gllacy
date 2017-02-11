@@ -44,6 +44,7 @@
           <li class="menu-item">
             <a href="#"><span class="menu-link">О Компании</span></a>
           </li>
+          
         </ul>
         
           
@@ -51,15 +52,21 @@
           
           <div class="search-button"> 
             <form class="search-form" name="search-form" method="post" action="search.php">
-              <input type="text" name="search" placeholder="Что ищем?">
+              <input class="caption-top-input" type="text" name="search" id="search" placeholder="Что ищем?">
+              <label for="search" class="caption-top">Что ищем?</label>
             </form>
           </div>
           
           <div class="login-button">
             <span>Вход</span>
             <form class="login-form" name="login-form" method="post" action="login.php">
-              <input type="text" name="login" placeholder="Электронная почта">
-              <input type="password" name="pass" placeholder="Пароль">
+              
+              <input class="caption-top-input" type="text" name="login" id="login" placeholder="Электронная почта">
+              <label for="login" class="caption-top">Электронная почта</label>
+              
+              <input class="caption-top-input" type="password" name="pass" id="password" placeholder="Пароль">
+              <label for="password" class="caption-top">Пароль</label>
+              
               <div class="login-links">
                 <a href="#" class="link-decor-black"><span>Забыли пароль?</span></a>
                 <a href="#" class="link-decor-black"><span>Новая регистрация</span></a>
@@ -146,14 +153,14 @@
         
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/1.png" alt="" height="267" width="267">
+              <img src="img/1.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="hit-item">
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
               310
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -167,14 +174,14 @@
           
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/2.png" alt="" height="267" width="267">
+              <img src="img/2.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="hit-item">
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
               380
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -188,14 +195,14 @@
           
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/3.png" alt="" height="267" width="267">
+              <img src="img/3.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="hit-item">
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
               355
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -209,14 +216,14 @@
           
           <div class="inner">
             <div class="catalog-item-pic">
-              <img src="img/4.png" alt="" height="267" width="267">
+              <img src="img/4.png" alt="Icecream" height="267" width="267">
             </div>
             <div class="hit-item">
               <img src="img/hit.png" alt="хит" width="61" height="61">
             </div>
             <div class="item-price">
               415
-              <img src="img/rouble.svg" alt="">
+              <img src="img/rouble.svg" alt="Rub" height="36" width="31">
               <span>/кг</span>
             </div>
             <div class="catalog-item-description">
@@ -234,22 +241,22 @@
           <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
         
           <div class="info-item">
-            <img src="img/info-icecream.png" alt="" width="49" height="49">
+            <img src="img/info-icecream.png" alt="info-icecream" width="49" height="49">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </div>
         
           <div class="info-item">
-            <img src="img/info-cow.png" alt="" width="49" height="49">
+            <img src="img/info-cow.png" alt="info-cow" width="49" height="49">
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </div>
         
           <div class="info-item">
-            <img src="img/info-leaf.png" alt="" width="49" height="49">
+            <img src="img/info-leaf.png" alt="info-leaf" width="49" height="49">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </div>
         
           <div class="info-item">
-            <img src="img/info-thermometer.png" alt="" width="49" height="49">
+            <img src="img/info-thermometer.png" alt="info-item" width="49" height="49">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </div>
         
@@ -266,7 +273,8 @@
           <div class="subscribe">
             <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </span>
             <form style="subscribe-form" name="subscribe-form" action="subscribe.php" method="post">
-              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="email" class="caption-top-input" name="email" id="subscribe-mail" placeholder="Электронная почта">
+              <label for="subscribe-mail" class="caption-top">Электронная почта</label>
               <button type="submit" class="subscribe-form-btn red-btn">Отправить</button>
             </form>
           </div>
@@ -276,6 +284,8 @@
       
       
       <section class="map">
+        
+        
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KkHqgDIdk1jsv71MzmTfSEqz8xtPJEwb&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
         </script>
         
@@ -287,9 +297,9 @@
               Для заказов по телефону:      <br>
             <span>8 812 450-25-25</span>    <br>
               (c 10 до 20 ежедневно)</p>
-          <button class="feedback-btn red-btn">
+          <a href="feedback.html" class="feedback-btn red-btn">
             Форма обратной связи
-          </button>
+          </a>
         </div>
         
       </section>
@@ -322,7 +332,7 @@
         </div>
         
         <div class="footer-copirites">
-          <img src="img/logo-footer.png" alt="Html Academy Logo">
+          <img src="img/logo-footer.png" alt="Html Academy Logo" width="108" height="38">
           <p>Сделано в <a href="#" class="link-decor-white"><span>HTML Academy</span></a> &#169; 2017</p>
         </div>
         
@@ -338,9 +348,15 @@
           
           <p>Мы обязательно вам ответим!</p>
           
-          <input type="text" placeholder="Как вас зовут?">
-          <input type="text" placeholder="Ваша почта для ответа?">
-          <textarea placeholder="Напишите что-нибудь..."></textarea>
+          <input type="text" name="user-name" 
+                class="caption-top-input" id="user" placeholder="Как вас зовут?">
+          <label for="user" class="caption-top">Как вас зовут?</label>
+          
+          <input type="email" class="caption-top-input" name="email" id="mail" placeholder="Ваша почта для ответа?">
+          <label for="mail" class="caption-top">Ваша почта для ответа?</label>
+          
+          <textarea name="feedback-text" class="caption-top-input" id="feedback" placeholder="Напишите что-нибудь..."></textarea>
+          <label for="feedback" class="caption-top">Напишите что-нибудь...</label>
           
           <button type="submit" class="red-btn">Отправить</button>
           
@@ -353,7 +369,7 @@
       
     </div>
     
-    
+    <script src="js/main.js"></script>
     
   </body>
   
