@@ -1,3 +1,16 @@
+var caption = document.querySelectorAll(".caption-top-input");
+
+for(var i = 0; i < caption.length; i++){
+  caption[i].addEventListener("blur", function() {
+    if(this.value != ""){
+      this.classList.add("caption-show")
+    } 
+    else {
+      this.classList.remove("caption-show")
+    }
+  }, true);
+};
+
 var link = document.querySelector(".feedback-btn");
 var popup = document.querySelector(".modal-content");
 var overlay = document.querySelector(".modal-overlay");
@@ -46,17 +59,3 @@ form.addEventListener("submit", function(event){
     popup.classList.add("modal-error");
   }
 });
-      
-      
-var caption = document.querySelectorAll(".caption-top-input");
-
-for(var i = 0; i < caption.length; i++){
-  caption[i].addEventListener("blur", function() {
-    if(this.value != ""){
-      this.classList.add("caption-show")
-    } 
-    else {
-      this.classList.remove("caption-show")
-    }
-  }, true);
-};
