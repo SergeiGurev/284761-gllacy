@@ -129,7 +129,6 @@ img {
 }
 
 .menu-link {
-  display: block;
   border-bottom: 1px solid rgba(255,255,255, .3);
   color: #fff;
   font-size: 16px;
@@ -401,8 +400,6 @@ img {
 }
 
 .login-links a {
-  display: inline-block;
-  vertical-align: baseline;
   margin-bottom: 2px;
   text-decoration: none;
   line-height: 1.2;
@@ -1090,8 +1087,6 @@ input[name="slider-selector"] {
 }
 
 .footer-menu-item a {
-  display: inline-block;
-  vertical-align: baseline;
   text-decoration: none;
   line-height: 1.2;
   color: #fff;
@@ -1118,8 +1113,6 @@ input[name="slider-selector"] {
 }
 
 .footer-copirites a {
-  display: inline-block;
-  vertical-align: baseline;
   line-height: 1.2;
   text-decoration: none;
   color: #fff;
@@ -1733,6 +1726,7 @@ input[name="slider-selector"] {
   color: #999;
   font-size: 11px;
   line-height: 13px;
+  font-weight: normal;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
